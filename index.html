@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>¿San Valentín?</title>
+  <style>
+    body {
+      background-color: #ff4d6d;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 30%;
+    }
+    button {
+      background-color: white;
+      color: #ff4d6d;
+      border: none;
+      padding: 15px 25px;
+      font-size: 18px;
+      border-radius: 20px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HOLA BABYYY 💗</h1>
+  <p>Ejecutando programa...</p>
+
+  <p>if (tú == mi_persona_favorita) {</p>
+  <p>&nbsp;&nbsp;return "Una preguntica... quisieras ser mi San Valentín?";</p>
+  <p>}</p>
+
+  <button onclick="aceptar()">SHIIIII</button>
+  <button onclick="moverBoton(this)">Ño</button>
+
+  <script>
+    function aceptar() {
+      document.body.innerHTML = "<h1>YAYYYYYYYY, SABÍA QUE DIRÍAS QUE SÍ, TIAMUUUUU</h1><p>😚😚😚</p>";
+    }
+
+    function moverBoton(boton) {
+      boton.style.position = "absolute";
+      boton.style.top = Math.random() * window.innerHeight + "px";
+      boton.style.left = Math.random() * window.innerWidth + "px";
+    }
+  </script>
+
+</body>
+</html>
